@@ -4,11 +4,15 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
-		<img src="google-logo.jpg">
+		<div class="logo">
+			<img src="http://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png">
+		</div>
 		<form action="#" method="GET">
-			<input type="search">
-		</form>
-		<button type="button" class="btn">Google Search</button>
-		<button type="button" class="btn">I'm Feeling Lucky</button>
+			<input type="text">
+	    	<div class=btnholder>
+		        <input type="submit" value="Google Search" id="search">
+		        <input type="submit" value="I'm Feeling Lucky" id="lucky">
+	      </div>
+	    </form>
 	</body>
 </html>
