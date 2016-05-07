@@ -3,6 +3,10 @@ body {
 	padding: 0;
 }
 
+.nav {
+	float: right;
+}
+
 .logo {
 	width: 30%;
 	margin: auto;
