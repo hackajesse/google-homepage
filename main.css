@@ -1,16 +1,42 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 9pt;
 }
 
 .nav {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	top: 10px;
+	width: 100%;
+}
+
+.nav ul {
 	float: right;
 }
 
+li {
+	text-align: right;
+	list-style-type: none;
+	display: inline;
+	padding: 8px;
+}
+
+li a:link {
+	text-decoration: none;
+}
+
+li a:hover {
+	text-decoration: underline;
+}
+
 .logo {
-	width: 30%;
 	margin: auto;
-	margin-top: 90px;
+	width: 35%;
+	text-align: center;
+	margin-top: 200px;
 }
 
 input {
@@ -27,33 +53,61 @@ input {
 
 .btnholder {
 	text-align: center;
+	padding-top: 18px;
 }
 
-#search {
+#search, #lucky {
 	display: inline-block;
-	width: 125px;
 	height: 35px;
-	background: #f4f4f4;
+	margin: 11px 4px;
+	background-color: #f4f4f4;
 	padding: 10px 20px;
 	border: none;
-	color: 757575;
-}
-
-#lucky {
-	display: inline-block;
-	width: 140px;
-	height: 35px;
-	background: #f4f4f4;
-	padding: 10px 20px;
-	border: none;
-	color: 757575;
-}
-
-#search:hover, #lucky:hover {
-	border-color: gray;
+	color: #757575;
 	font-weight: bold;
 }
 
+#search {	
+	width: 125px;
+}
+
+#lucky {
+	width: 140px;
+}
+
+#search:hover, #lucky:hover {
+	border: #c6c6c6 1px solid;
+	box-shadow: 0px 1px 1px;
+	color: #222;
+	background-color: #f8f8f8;
+}
+
 :active {
-	border-color: blue;
+	border: #4d90fe 1px solid;
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: #F2F2F2;
+	border: #E4E4E4 1px solid;
+	
+}
+
+footer a {
+	display: inline-block;
+	padding: 0px 0px 0px 27px;
+	line-height: 35px;
+	color: #66666E;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
